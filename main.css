@@ -1,0 +1,184 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+body {
+  background: url(images/pattern.png) top left repeat;
+}
+
+#myBar {
+    width: 0%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+#inverted {
+  visibility: visible;
+  position: fixed;
+  top: -3%;
+  left: 50%;
+  width: 5%;
+}
+
+table#test {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#og {
+    position: fixed;
+    top: -3%;
+    left:46%;
+    width: 5%;
+}
+
+.topnav {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    min-height: 50px;
+    width: 100%;
+}
+
+.topnav active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav a {
+  float: center;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+p {
+    color: #4CAF50;
+}
+
+#test {
+    color: #444444;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid;
+  border-color: #020202;
+  width: 70%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.section div {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section p {
+  color: black;
+}
+
+.nowyouseeme {
+  position: absolute;
+  display: none;
+  border: 2px solid transparent;
+  color: #f4f4f4;
+  background-color: #333;
+  border-radius: 10px;
+  z-index: 1;
+
+  max-width: 50%;
+}
+.nowyouseeme:before {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    left: 10px;
+    top: -11px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #333;
+}
+a:hover + div {
+  display: block;​
+}
+}
+
+.container {
+    position: relative;
+    width: 225px;
+    height: 52px;
+    padding: 20px 10px 0;
+    margin: 50px auto 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    -moz-border-radius: 5px;
+         border-radius: 5px;
+    -webkit-box-shadow :0px 1px 1px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.icon1 {
+    position: relative;
+    display: inline-block;
+}
+
+.icon1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: -150px -150px;
+    background-repeat:no-repeat;
+    background-image: -webkit-gradient(
+        linear, 0 0, 100% 100%,
+        color-stop(0% , rgba(255, 255, 255, 0.3)),
+        color-stop(37%, rgba(255, 255, 255, 0.3)),
+        color-stop(45%, rgba(255, 255, 255, 0.8)),
+        color-stop(50%, rgba(255, 255, 255, 0.0))
+    );
+    background-image: -moz-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.3), 0%,
+        rgba(255, 255, 255, 0.3), 37%,
+        rgba(255, 255, 255, 0.8), 45%,
+        rgba(255, 255, 255, 0.0), 50%
+    );
+    -moz-background-size:250% 250%, 100% 100%;
+      -o-background-size:250% 250%;
+         background-size:250% 250%;
+
+    -webkit-transition: background-position 0s ease;
+       -moz-transition: background-position 0s ease;
+            transition: background-position 0s ease;
+}
+
+.icon1:hover:before,
+.icon1:focus:before {
+    background-position:0 0;
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+
+.icon1:after {
+  display: none;
+}
