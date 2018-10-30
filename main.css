@@ -182,3 +182,15 @@ a:hover + div {
 .icon1:after {
   display: none;
 }
+
+@keyframes anims {
+  50% {width: 50px;}
+  100% {width: 100px;}
+}
+
+.animated {
+    -webkit-animation-name: anims; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anims;
+    animation-duration: 4s;
+}
