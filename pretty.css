@@ -82,7 +82,7 @@ a:after {
 
 @media screen and (min-width: 600px) {
   .header {
-    padding-top: 0px;
+    padding-top: 140px;
   }
 }
 
