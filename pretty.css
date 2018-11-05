@@ -87,7 +87,7 @@ a:after {
 }
 
 @media screen and (min-width: 600px) {
-.banner-place {
+#banner-place {
   margin-top: 10%;
 }
 }
