@@ -73,7 +73,7 @@ a:after {
 /* Header Wrap */
 .header {
 /*  background: #1CBCAD;*/
-  background: url(images/stars.jpg) no-repeat center center fixed;
+  background: url(images/stars.jpg) no-repeat center top fixed;
 /*  padding-top: 140px;*/
   text-align:center;
   min-height: 90vh;
