@@ -74,12 +74,17 @@ a:after {
 .header {
 /*  background: #1CBCAD;*/
   background: url(images/stars.jpg) no-repeat center center fixed;
-  padding-top: 140px;
+/*  padding-top: 140px;*/
   text-align:center;
   min-height: 90vh;
   width: 100%;
 }
 
+@media screen and (min-width: 600px) {
+  .header {
+    padding-top: 140px;
+  }
+}
 .header h1 {
   font-size: 80px;
   color: white;
