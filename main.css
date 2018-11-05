@@ -15,7 +15,7 @@ body {
 #myBar {
     width: 0%;
     height: 50px;
-    background-color: black;
+    background-color: #460040;
     position: fixed;
     top: 0;
 }
