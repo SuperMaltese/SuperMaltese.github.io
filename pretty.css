@@ -73,7 +73,8 @@ a:after {
 /* Header Wrap */
 .header {
   background: #1CBCAD;
-  background: url(images/trianglify.png) no-repeat center top;
+  background: url(images/stars.jpg) center top;
+  background-size: cover;
   padding-top:140px;
   text-align:center;
   background-attachment: relative;
@@ -100,7 +101,7 @@ a:after {
 
 /* About Wrap */
 .about {
-  background: #460d6d;
+  background: #061100;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
