@@ -72,15 +72,11 @@ a:after {
 
 /* Header Wrap */
 .header {
-  background: #1CBCAD;
-  background: url(images/stars.jpg) center top;
-  background-size: cover;
-  padding-top:140px;
+/*  background: #1CBCAD;*/
+  background: url(images/stars.jpg) no-repeat center center fixed;
+  padding-top: 140px;
   text-align:center;
-  background-attachment: relative;
-  background-attachment: fixed;
-  background-position: center center;
-  min-height: 500px;
+  min-height: 70vh;
   width: 100%;
 }
 
@@ -88,6 +84,8 @@ a:after {
   font-size: 80px;
   color: white;
   background: rgba(0,0,0,0.2);
+  margin: auto;
+  width: 40%;
 }
 
 .header h3 {
