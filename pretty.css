@@ -114,12 +114,14 @@ a:after {
 
 /* About Wrap */
 .about {
-  background: #061100;
+/*  background: #061100;*/
+  background: -webkit-linear-gradient(bottom, black 0%, rgba(0, 0, 0, 100) 70%, transparent 100%);;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0px;
+  margin-top: -8%;
   color: white;
 } 
 
