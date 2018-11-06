@@ -16,6 +16,7 @@ body {
     width: 0%;
     height: 5%;
     background-color: #0e2600;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0,0,0, 1) 80%, rgba(255, 255, 255, 0) 100%);
     position: fixed;
     top: 0;
     opacity: 1;
