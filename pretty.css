@@ -73,7 +73,7 @@ a:after {
 /* Header Wrap */
 .header {
 /*  background: #1CBCAD;*/
-  background: url(images/stars.jpg) no-repeat center top fixed;
+  background: url(images/stars.jpg) repeat center top fixed;
 /*  padding-top: 140px;*/
   text-align:center;
   min-height: 90vh;
@@ -82,6 +82,7 @@ a:after {
 
 @media screen and (min-width: 600px) {
   .header {
+  background: url(images/stars.jpg) no-repeat center top fixed;
     padding-top: 140px;
   }
 }
@@ -144,7 +145,10 @@ a:after {
 .footer p {
   color: white;
 }
-
+.footer div {
+  width: 70%;
+  margin: auto;
+}
 .footer h5 {
   color: white;
 }
