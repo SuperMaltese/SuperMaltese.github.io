@@ -72,8 +72,8 @@ a:after {
 
 /* Header Wrap */
 .header {
-  background: #000000;
   background: url(images/stars.jpg) repeat center top fixed;
+  background: #000000;
 /*  padding-top: 140px;*/
   text-align:center;
   min-height: 90vh;
