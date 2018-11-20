@@ -7,7 +7,14 @@
         vertical-align: baseline;
         background: transparent;
     }
-
+#test {
+    color: black;
+    z-index: 100;
+}
+a {
+   pointer-events: auto !important;  
+   cursor: pointer !important;
+}
 body {
   background: url(images/pattern.png) top left repeat;
 }

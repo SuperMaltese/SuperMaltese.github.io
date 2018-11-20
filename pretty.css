@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
-head {
-  background-color: #000;
-}
 body {
   background-color: #f2f2f2;
   font-family: "Raleway"; /* OPTIONAL: Google Fonts - base font */
