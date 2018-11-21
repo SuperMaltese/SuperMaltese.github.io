@@ -80,7 +80,17 @@ p {
 #test {
     color: #444444;
 }
+#overlay {
 
+  width: 70%;
+  z-index: 1;
+  color: rgba(209, 206, 209, 0.4);
+  font-family: Inconsolata, monospace;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
 .section {
   display: flex;
   flex-direction: row;
@@ -90,6 +100,9 @@ p {
   padding-top: 20px;
   padding-bottom: 40px;
   margin: auto;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgb(0,100,0,.1);
 }
 
 .section div {
