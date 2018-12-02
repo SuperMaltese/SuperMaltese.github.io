@@ -138,6 +138,7 @@ a:after {
 
 .footer {
   background: #2f2f2f;
+  position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
 }
