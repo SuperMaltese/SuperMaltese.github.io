@@ -8,16 +8,18 @@
         background: transparent;
     }
 
-#test {
-    color: black;
-    z-index: 100;
+h5 {
+	font-weight: 600;
+	font-size: 3em;
 }
+
 a {
    pointer-events: auto !important;  
    cursor: pointer !important;
 }
 body {
-  background: url(images/pattern.png) top left repeat;
+	//background: url() top left repeat;
+	background-color: rgb(121, 166, 138, .5);
 }
 
 #myBar {
@@ -43,13 +45,6 @@ table#test {
     width: 80%;
     margin: 0 auto;
 }
-
-/*#og {
-    position: fixed;
-    top: 0;
-    left:46%;
-    height: 5%;
-}*/
 
 .topnav {
     background-color: #01a07b;
@@ -78,20 +73,6 @@ p {
     color: #4CAF50;
 }
 
-#test {
-    color: #444444;
-}
-#overlay {
-
-  width: 70%;
-  z-index: 1;
-  color: rgba(209, 206, 209, 0.4);
-  font-family: Inconsolata, monospace;
-  font-size: 50px;
-  text-align: center;
-  line-height: 100px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-}
 .section {
   display: flex;
   flex-direction: row;
@@ -103,7 +84,7 @@ p {
   margin: auto;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background-color: rgb(0,100,0,.1);
+  background-color: rgb(121, 166, 138, .7);
 }
 
 .section div {
@@ -222,12 +203,12 @@ a:hover + div {
 
 .shape {
     position: absolute;
-    background: #515668;
+    background: #148097;
 }
 
 #rotated-square {
     top: 20px;
-    left: 10%;
+    left: 5%;
     height: 75px;
     width: 75px;
     clip-path: polygon(70% 0, 100% 70%, 30% 100%, 0 30%);

@@ -5,38 +5,18 @@ body {
   font-family: "Raleway"; /* OPTIONAL: Google Fonts - base font */
   font-weight: 300;
   font-size: 16px;
-  margin: 0px;
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
 }
 
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
   font-weight: 300;
-  color: #333;
-}
-
-/* Paragraph & Typographic */
-p {
-  line-height: 28px;
-  margin-bottom: 0px;
-}
-
-.centered {
-    text-align: center;
 }
 
 /* Links */
 a {
   color: #1CBCAD;
   word-wrap: break-word;
-
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 a:hover,
@@ -46,16 +26,7 @@ a:focus {
   outline: 0;
 }
 
-a:before,
-a:after {
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
- hr {
+hr {
   display: block;
   height: 1px;
   border: 0;
@@ -94,12 +65,8 @@ a:after {
 .header h1 {
   font-size: 80px;
   color: white;
-  /*background: linear-gradient(to right,
-    transparent 0%,
-    rgba(0,0,0,0.2) 50%,
-    transparent 100%)*/
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 49%, rgba(255, 255, 255, 0) 100%);
-      margin: auto;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 49%, rgba(255, 255, 255, 0) 100%);
+  margin: auto;
   width: 40%;
 }
 
