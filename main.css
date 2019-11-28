@@ -8,13 +8,20 @@
         background: transparent;
     }
 
-.wrapper {
-  overflow: scroll;
-  scroll-snap-type: y proximity;
+html {
+scroll-behavior: smooth
 }
 
-.wrapper div {
-  scroll-snap-align: start;
+.box {
+        max-height: 100vh;
+	overflow-y: scroll;
+	position: relative;
+	scroll-snap-type: y proximity;
+        justify-content: center;
+}
+.stop {
+	//scroll-snap-stop: always;
+	scroll-snap-align: start;
 }
 
 h5 {
@@ -83,8 +90,10 @@ p {
 }
 
 .section {
+  z-index:-1;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   border-bottom: 1px solid;
   border-color: #020202;
   width: 70%;
@@ -118,8 +127,9 @@ p {
   opacity: 0.9;
   max-width: 50%;
 }
-.nowyouseeme:before {
-    content: ' ';
+.nowyouseeme:after {
+    z-index: 9000;
+    content: '';
     height: 0;
     position: absolute;
     width: 0;
@@ -128,9 +138,10 @@ p {
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
     border-bottom: 10px solid #333;
+-webkit-backface-visibility: hidden;
 }
 a:hover + div {
-  display: block;​
+  display: block;
 }
 }
 
@@ -212,7 +223,7 @@ a:hover + div {
 
 .shape {
     position: absolute;
-    background: #148097;
+    background: #149785;
 }
 
 #rotated-square {
