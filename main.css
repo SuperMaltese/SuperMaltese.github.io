@@ -38,6 +38,11 @@ body {
 	background-color: rgb(121, 166, 138, .5);
 }
 
+#footwrap {
+	background: url(https://www.transparenttextures.com/patterns/brushed-alum-dark.png);
+	background-color: #0f0f0f;
+}
+
 #myBar {
     width: 0%;
     height: 5%;
