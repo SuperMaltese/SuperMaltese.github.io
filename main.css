@@ -8,6 +8,15 @@
         background: transparent;
     }
 
+.wrapper {
+  overflow: scroll;
+  scroll-snap-type: y proximity;
+}
+
+.wrapper div {
+  scroll-snap-align: start;
+}
+
 h5 {
 	font-weight: 600;
 	font-size: 3em;
