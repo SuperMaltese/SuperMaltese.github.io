@@ -2,11 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 body {
-  background-color: #f2f2f2;
   font-family: "Raleway"; /* OPTIONAL: Google Fonts - base font */
   font-weight: 300;
   font-size: 16px;
-  color: #555;
   margin: 0px;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -72,21 +70,22 @@ a:after {
 
 /* Header Wrap */
 .header {
-  background: url(images/stars.jpg) repeat center top fixed;
-  background: #000000;
-/*  padding-top: 140px;*/
+  background-size: cover;
+  background-image: url(images/stars.jpg);
   text-align:center;
   min-height: 100vh;
+  padding-top: 140px;
   width: 100%;
 }
 
+/*
 @media screen and (min-width: 600px) {
   .header {
   background: url(images/stars.jpg) no-repeat center top fixed;
     padding-top: 140px;
   }
 }
-
+*/
 @media screen and (min-width: 600px) {
 #banner-place {
   margin-top: 10%;
