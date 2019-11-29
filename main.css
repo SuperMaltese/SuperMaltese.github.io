@@ -9,7 +9,21 @@
     }
 
 html {
-scroll-behavior: smooth
+        scroll-behavior: smooth
+}
+
+#navBar {
+	z-index: 20;
+	display: flex;
+	float: right;
+	flex-wrap: nowrap;
+	list-style: none;
+	padding: 5px;
+        color: white;
+}
+#navBar > li {
+	padding: 2px;
+	margin: 5px;
 }
 
 .box {
@@ -22,6 +36,8 @@ scroll-behavior: smooth
 .stop {
 	//scroll-snap-stop: always;
 	scroll-snap-align: start;
+	margin-top: 20px;
+	padding-top:30px;
 }
 
 h5 {
