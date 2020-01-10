@@ -127,7 +127,7 @@ p {
   padding-top: 20px;
   padding-bottom: 40px;
   margin: auto;
-  -webkit-backdrop-filter: blur(10px);
+  //-webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background-color: rgb(121, 166, 138, .7);
 }
