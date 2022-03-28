@@ -1,0 +1,185 @@
+<html>
+<title>First Application of PHP</title>
+<body bgcolor= "white" style='margin-left: auto; margin-right: auto; width: 50%' >
+<button onClick="setupAudio()"><p>Click me to start, then start scrolling</p></button>
+<script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+const audioElements = []
+const structure = "0023100021000210002100021000210002100021000210002100021000210002100021000210002100021212100021000210002100021000210002100021000210002100021000210002100021002100210000222222222222222222222224444444444415555"
+const arrayOfNumbers = structure.split("").map(Number)
+
+let pic = (num) => {
+	return `
+				<div id='box${num}' class="picture">
+				<img  width="100%" style='display: block;' src='images/CamScanner 03-23-2022 11.19_${num}.jpg' >
+				</div>
+				`;
+}
+
+let blank = () => {
+return "<div style='height:100px; background: white' />"
+}
+
+let black = () => {
+return "<div style='height:100px; background: black' />"
+}
+
+let text = (i) => {
+  return `<div>
+<p  style="text-align: center; font-size: 50" id=text${i}></p>
+</div>`
+}
+
+let textSmall = (i) => {
+  return `<div>
+<p  style="text-align: center; font-size: 30" id=text${i}></p>
+</div>`
+}
+
+let gradient = () => {
+
+}
+
+function myFunction() {
+  let picNum = 1;
+  let textNum = 0;
+  for (let i =0; i <= arrayOfNumbers.length; i++) {
+	switch(arrayOfNumbers[i]) {
+  		case 1:
+    			document.body.innerHTML += pic(picNum);
+	                picNum++;
+    		break;
+  		case 0:
+    			document.body.innerHTML += blank();
+   			 break;
+                case 2:
+                        document.body.innerHTML += text(textNum)
+                        textNum++;
+                        break;
+                case 3:
+                        document.body.innerHTML += textSmall(textNum)
+                        textNum++;
+                        break;
+  		default:
+    		// code block
+	}
+
+	}
+const assignText = ["Literacy Autobiography", 
+"Kevin Gao",
+0,
+"China, 1960's",
+"(my father)",
+0,
+0,
+"Grandfather starved to death so that Father could eat",
+0,
+"Boston, 1999",
+0,
+0,
+"Me, age 0",
+0,
+"Primary discourse is the birthright of every human and comes through primary socialization within the family as this is defined within a given culture (Gee 22).",
+'"[The scholarhip boy,] without the support of old certainties and consolations...assumes the procedures and doctrines of the classroom." (Rodriguez, 5).',
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+"Pandemic 2020",
+0,
+0,
+'"If men  and women  are  searchers  and  their ontological  vocation  is  humanization,  sooner  or later  they  may  perceive  the  contradiction  in  which  banking  education  seeks  to  maintain  them,  and  then  engage  themselves  in  the  struggle  for  their liberation" (Freire, 75)',
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+"Bibliography",
+0,
+'Freire, P. "Chapter 2: Banking concept of education" . Pedagogy of the Oppressed. (pp 71-86). 30th Anniversary edition (2000). New York: Continuum.',
+"Gee, J. P. (1989). Literacy, discourse, and linguistics: Introduction and what is literacy? Journal of Education, 171, 5-25.",
+"Rodriguez, Richard, 1944-. Hunger of Memory : the Education of Richard Rodriguez. Boston, Mass. :D.R. Godine, 1981.",
+0,
+]
+
+for (let i = 0; i < assignText.length; i++) {
+     if (assignText[i] !== 0) {
+     document.getElementById(`text${i}`).innerHTML = assignText[i]
+     }
+}
+}
+
+myFunction()
+
+const func = () => {
+const picElements = document.getElementsByClassName('picture')
+const picPositions = []
+let cumHeight = 0;
+const bodyOffset = document.body.getBoundingClientRect().top;
+for (let i = 0; i < picElements.length; i++) {
+    //let k = picElements[i].offsetTop + cumHeight;
+    let k =  picElements[i].offsetTop;
+    picPositions.push(k);
+}
+
+
+let maxScrollSoFar = 0;
+let previousScrollIndex = 0;
+let currentScrollIndex = 0;
+let minLook = 0;
+window.addEventListener("scroll", function(){
+   let currentScrollIndex = indexOf(picPositions, window.scrollY, minLook)
+   if (window.scrollY > picPositions[currentScrollIndex]) {
+       minLook = currentScrollIndex;
+       updateAudio(minLook);
+   }
+});
+
+}
+
+$(window).load(func);
+
+const setupAudio = () => {
+audioElements.push([new Audio('sounds/birds.wav'), 0, 1])
+audioElements.push([new Audio('sounds/crying_baby.mp3'), 8, 10])
+audioElements.push([new Audio('sounds/Butterfly Lovers.mp3', ),  1, 8])
+}
+
+const updateAudio = (index) => {
+    for (let i = 0; i < audioElements.length; i++) {
+        let tup = audioElements[i];
+        if (index < tup[2] && index >= tup[1]) {
+            tup[0].play();
+        } else {
+            tup[0].pause();
+        }
+    }
+}
+
+const indexOf = (array, target, minLook) => {
+    for (let i = array.length - 1; i >= minLook; i--) {
+        if (target > array[i]) {
+            return i;
+        }
+    }
+    return minLook;
+}
+
+</script>
+</body>
+</html>
